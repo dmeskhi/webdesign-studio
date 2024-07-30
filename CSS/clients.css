@@ -121,3 +121,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1rem;
 }
 /* End of Testimonials */
+
+/* Responsive */
+@media (max-width: 1600px) {
+    .testimonials-wrapper {
+        width: 90%;
+    }
+}
+/* End of Responsive */
