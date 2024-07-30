@@ -138,4 +138,14 @@ body::-webkit-scrollbar-thumb {
         width: 32rem;
     }
 }
+
+@media (max-width: 1366px) {
+    .testimonials-wrapper {
+        width: 96%;
+    }
+
+    .testimonial {
+        width: 32rem;
+    }
+}
 /* End of Responsive */
