@@ -1,2 +1,4 @@
-# webdesign-studio
-David's Webdeisgn Studio
+# Davids-WebDesign-Studio
+Imaginary web design studio
+![WEBSTUDIO!](/images/web-studio.png)
+
