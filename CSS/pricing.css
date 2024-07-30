@@ -223,4 +223,16 @@ body::-webkit-scrollbar-thumb {
         bottom: 12%;
     }
 }
+
+@media (max-width: 1440px) {
+    .pricing-small-circle {
+        top: 15%;
+        right: 15%;
+    }
+
+    .pricing-big-circle {
+        right: 20%;
+        bottom: 28%;
+    }
+}
 /* End of Responsive */

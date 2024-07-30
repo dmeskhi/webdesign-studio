@@ -128,4 +128,14 @@ body::-webkit-scrollbar-thumb {
         width: 90%;
     }
 }
+
+@media (max-width: 1440px) {
+    .testimonials-wrapper {
+        width: 90%;
+    }
+
+    .testimonial {
+        width: 32rem;
+    }
+}
 /* End of Responsive */
