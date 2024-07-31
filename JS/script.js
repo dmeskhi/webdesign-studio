@@ -1,12 +1,50 @@
 //Navbar
 const navBar = document.querySelector(".navbar");
+const menuIcon = document.querySelector(".menu-icon");
+const navItems = document.querySelectorAll(".nav-item");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    navBar.classList.add("sticky");
+  if (window.innerWidth <= 820 && navBar.classList.contains
+    ("hamburger")) {
+      navBar.classList.remove("sticky");
   } else {
-    navBar.classList.remove("sticky");
+    navBar.classList.toggle("sticky", window.scrollY > 0);
   }
+
+  if (window.scrollY > 0) {
+    menuIcon.classList.add("position");
+  } else {
+    menuIcon.classList.remove("position");
+  }
+
+  if(navBar.classList.contains("hamburger")) {
+    menuIcon.classList.remove("position");
+  }
+});
+
+menuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("hamburger");
+  navBar.classList.remove("sticky");
+
+  if(!navBar.classList.contains("hamburger") && window.scrollY !== 0) {
+    navBar.classList.add("sticky");
+    menuIcon.classList.add("position");
+  } else {
+    menuIcon.classList.remove("position");
+  }
+});
+
+navItems.forEach(navItem => {
+  navItem.addEventListener("click", () => {
+    if(navItem.classList.contains("show")) {
+      navItem.classList.remove("show");
+    } else {
+      navItems.forEach(item => {
+        item.classList.remove("show");
+      })
+      navItem.classList.add("show");
+    }
+  })
 });
 //End of Navbar
 
