@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David's Web Design Studio</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/products.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="account.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -317,49 +317,42 @@
       </nav>
       <!-- End of Navigation -->
 
-      <!-- Products -->
-      <section class="products-p">
-        <div class="products-p-wrapper">
-          <div class="products-p-header">
-            <h1>Themes & Plugins</h1>
-            <h3>Build The Most Popular Themes & Plugins in the World</h3>
-          </div>
-          <div class="products-p-content">
-            <div class="products-p-content-left">
-              <h1>Build</h1>
-              <p>
-                Create better projects faster with unlimited downloads of our
-                full website templates, plugins, video templates &amp; more.
-                Millions of creative assets all for one low cost.
-              </p>
-              <button type="button" class="products-btn">Learn More</button>
+      <!-- Account -->
+      <section class="account">
+        <div class="account-wrapper">
+            <div class="account-circle"></div>
+            <div class="account-header">
+                <h1>Members Space</h1>
+                <h3>
+                    Manage your account, download products
+                    and chat with us 24/7
+                </h3>
             </div>
-            <div class="products-p-content-right">
-              <img src="../images/web2-img1.png" />
-              <img src="../images/web2-img2.png" />
-              <img src="../images/web2-img3.png" />
+            <div class="account-form-wrapper">
+                <span class="material-symbols-rounded">
+                    person_check
+                </span>
+                <form>
+                    <div class="account-inputs">
+                        <input type="text" placeholder="Username" />
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <div class="account-check">
+                        <input type="checkbox" id="account-check" />
+                        <label for="account-check">Remember Me</label>
+                    </div>
+                    <button type="button">Log in</button>
+                    <p>
+                        Forgot Your <span>Username</span> or 
+                        <span>Password</span>?
+                    </p>
+                </form>
             </div>
-          </div>
-          <div class="products-p-promo">
-            <div class="products-p-promo-shapes">
-              <div class="promo-rectangle"></div>
-              <div class="small-circle"></div>
-              <div class="big-circle"></div>
-            </div>
-            <div class="promo-content">
-              <h1>
-                100,000+ Clients are already building awesome and modern websites
-                with David's Web Design Studio. Join the most empowered community.
-              </h1>
-              <button type="button">Sign Up Today</button>
-              <p>We offer a 30 day money back guarantee, so join us!</p>
-              <div class="promo-shadow"></div>
-            </div>
-          </div>
-         
+            <button type="button" class="btn-out">Not a 
+            member yet? Join today!</button>
         </div>
       </section>
-      <!-- End of Products -->
+      <!-- End of Account -->
 
       <!-- Footer -->
       <footer>
@@ -420,8 +413,7 @@
       <!-- End of Footer -->
     </div>
     <!-- End of Container -->
-    <script src="../JS/products.js"></script>
-    <script src="../JS/script.js"></script>
+    <script src="script.js"></script>
   </body>
   </body>
 </html>
